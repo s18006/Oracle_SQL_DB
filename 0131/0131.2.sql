@@ -1,0 +1,1 @@
+SELECT last_name, salary, ROUND(salary * 0.9) FROM EMPLOYEES WHERE commission_pct IS NULL ORDER BY salary DESC FETCH FIRST 5 PERCENT ROWS ONLY;
