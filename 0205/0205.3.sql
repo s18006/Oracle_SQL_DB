@@ -1,0 +1,1 @@
+SELECT e.department_id, d.department_name, d.location_id, COUNT(*) FROM employees e join departments d ON(e.department_id = d.department_id) GROUP BY e.department_id, d.department_name, d.location_id ORDER BY e.department_id DESC;
